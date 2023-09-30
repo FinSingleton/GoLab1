@@ -54,5 +54,10 @@ func ask(s score, question question) score {
 }
 
 func main() {
-	// TODO: Write a quiz program
+	s := score(0)
+	q := questions()
+	for x := 0; x < 6; x++ {
+		s = ask(s, q[x])
+	}
+	print(s)
 }
